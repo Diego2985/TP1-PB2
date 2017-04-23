@@ -1,14 +1,17 @@
-package ar.edu.unlam.basica2.tp1;
+package ar.adu.unlam.basica2.tp1;
 
 public class Disco {
-
 	private Double radioInterior;
 	private Double radioExterior;
-	static final Double PI = 3.14;
+	private final static Double PI = 3.14;
 	
 	public Disco (Double radInterno, Double radExterno) {
 		radioInterior = radInterno;
 		radioExterior = radExterno;		
+	}
+	
+	public Disco() {
+		super();
 	}
 	
 	public void setRadioInterior(Double radioInterior){
@@ -31,12 +34,14 @@ public class Disco {
 		return (2 * PI * radioInterior);		 
 	}
 	
-    public Double getPerimetroExterior(){
-    	return (2 * PI * radioExterior);
+	public Double getPerimetroExterior(){
+		return (2 * PI * radioExterior);
 	}
-    
-    public Double getSuperficie(){
-    	return (getPerimetroExterior() - getPerimetroInterior());
-    }
-}
+	
+	public Double getSuperficie(){
+		return (getPerimetroExterior() - getPerimetroInterior());
+	}
 
+
+
+}
