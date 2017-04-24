@@ -1,17 +1,17 @@
-package ar.adu.unlam.basica2.tp1;
+package ar.edu.unlam.basica2.tp1;
 
 public class Disco {
 	private Double radioInterior;
 	private Double radioExterior;
 	private final static Double PI = 3.14;
 	
+	public Disco() {
+		super();
+	}
+	
 	public Disco (Double radInterno, Double radExterno) {
 		radioInterior = radInterno;
 		radioExterior = radExterno;		
-	}
-	
-	public Disco() {
-		super();
 	}
 	
 	public void setRadioInterior(Double radioInterior){
